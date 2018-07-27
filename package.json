@@ -1,7 +1,7 @@
 {
-  "name": "on-click-outside",
-  "version": "1.0.0",
-  "description": "Handle On Click outside events with a custom element",
+  "name": "on-click-outside-element",
+  "version": "0.0.0",
+  "description": "Handle outside events with a custom element",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
