@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`On Click Outside element should be able to render 1`] = `
+<on-click-outside
+  class="hydrated"
+>
+  <p>
+    hi
+  </p>
+</on-click-outside>
+`;

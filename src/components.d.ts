@@ -29,33 +29,64 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface MyComponent {
-      'first': string;
-      'last': string;
+    interface DemoParent {
+
     }
   }
 
-  interface HTMLMyComponentElement extends StencilComponents.MyComponent, HTMLStencilElement {}
+  interface HTMLDemoParentElement extends StencilComponents.DemoParent, HTMLStencilElement {}
 
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLDemoParentElement: {
+    prototype: HTMLDemoParentElement;
+    new (): HTMLDemoParentElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'demo-parent': HTMLDemoParentElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'demo-parent': HTMLDemoParentElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'demo-parent': JSXElements.DemoParentAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+    export interface DemoParentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface OnClickOutside {
+
+    }
+  }
+
+  interface HTMLOnClickOutsideElement extends StencilComponents.OnClickOutside, HTMLStencilElement {}
+
+  var HTMLOnClickOutsideElement: {
+    prototype: HTMLOnClickOutsideElement;
+    new (): HTMLOnClickOutsideElement;
+  };
+  interface HTMLElementTagNameMap {
+    'on-click-outside': HTMLOnClickOutsideElement;
+  }
+  interface ElementTagNameMap {
+    'on-click-outside': HTMLOnClickOutsideElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'on-click-outside': JSXElements.OnClickOutsideAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface OnClickOutsideAttributes extends HTMLAttributes {
+      'onClickoutside'?: (event: CustomEvent<{ sourceEvent: Event }>) => void;
     }
   }
 }

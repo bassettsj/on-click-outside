@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'onclickoutside',
   outputTargets:[
     {
       type: 'dist'
